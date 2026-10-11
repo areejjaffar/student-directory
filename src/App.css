@@ -1,0 +1,203 @@
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+}
+
+/* Top Header */
+.top-header {
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  gap: 24px;
+  background-color: #ffffff;
+}
+
+/* Student Portal */
+.portal-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Dashboard, Students, Courses, Reports */
+.main-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 12px;
+  flex: 1;
+}
+
+.main-links a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.main-links a:hover {
+  color: #0d6efd;
+}
+
+/* Settings and Search */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.settings-btn {
+  padding: 10px 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header-actions input {
+  width: 200px;
+  height: 38px;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.header-actions input:focus {
+  border-color: #86b7fe;
+}
+
+/* Black Navigation Bar */
+.black-navbar {
+  width: 100%;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 32px;
+  background-color: #171717;
+  flex-wrap: wrap;
+}
+
+.black-navbar a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.black-navbar a:hover {
+  color: #adb5bd;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 32px 24px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.breadcrumb a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Student Directory Heading */
+.page-heading {
+  margin: 0 32px;
+  padding: 8px 0 24px;
+}
+
+.page-heading h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.page-heading p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1000px) {
+  .top-header {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .main-links {
+    gap: 16px;
+  }
+
+  .header-actions {
+    margin-left: 0;
+  }
+
+  .black-navbar {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 20px;
+  }
+
+  .main-links {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .header-actions {
+    width: 100%;
+  }
+
+  .header-actions input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .black-navbar {
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .breadcrumb {
+    margin: 24px 20px 20px;
+  }
+
+  .page-heading {
+    margin: 0 20px;
+  }
+}
